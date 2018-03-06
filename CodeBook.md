@@ -12,7 +12,7 @@ activity: one of the six activities being studied (walking, walking downstairs, 
 
 tBodyAcc_mean_X ~ fBodyBodyGyroJerkMag_std: a pair of mean ('mean') and standard deviation ('std') for each type of signals generated from the study, there are 33 signals and so 66 variables in this category
 
-
+=================================================
 
 Tidy data 'dat2' is a derivative of 'dat', each row of 'dat2' is the average of all measurements of signals for an activity and a subject,
 
