@@ -52,3 +52,6 @@ dat <- dat[, c(ncol(dat), 1:ncol(dat)-1)]
 dat2 <- dat %>% group_by(data.type, subject, activity) %>% 
                 summarise_at(vars(tBodyAcc_mean_X:fBodyBodyGyroJerkMag_std), mean, na.rm = TRUE)
 names(dat2)[4:69] <- paste0("avg_", names(dat2)[4:69])
+
+write.table(dat2, "tidydat.txt", row.names = FALSE)
+
